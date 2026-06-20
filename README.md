@@ -9,17 +9,17 @@ A Model Context Protocol (MCP) server that provides Speech-to-Text (STT) and Tex
 
 ## Quick Start
 
-### Using npx
+### Using npx (Recommended)
 
 ```bash
-npx github:yourusername/ttsstt-mcp-server
+npx github:ptbsare/ttsstt-mcp-server
 ```
 
 ### Local Development
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/ttsstt-mcp-server.git
+git clone https://github.com/ptbsare/ttsstt-mcp-server.git
 cd ttsstt-mcp-server
 
 # Install dependencies
@@ -72,7 +72,7 @@ Add to your MCP client configuration (e.g., Claude Desktop, Cursor, VS Code):
   "mcpServers": {
     "ttsstt": {
       "command": "npx",
-      "args": ["github:yourusername/ttsstt-mcp-server"],
+      "args": ["github:ptbsare/ttsstt-mcp-server"],
       "env": {
         "STT_URL": "http://192.168.195.210:10500/v1/audio/transcriptions",
         "STT_API_KEY": "your-stt-api-key",
@@ -158,6 +158,7 @@ ttsstt-mcp-server/
 ├── dist/                 # Compiled JavaScript
 ├── package.json
 ├── tsconfig.json
+├── LICENSE
 └── README.md
 ```
 
@@ -170,4 +171,15 @@ ttsstt-mcp-server/
 
 ## License
 
-MIT
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
